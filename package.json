@@ -1,0 +1,27 @@
+{
+  "name": "spacex_clone_page",
+  "version": "1.0.0",
+  "description": "Sample clone of the SpaceX home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSSmitty/spacex_clone_page.git"
+  },
+  "author": "Corwin Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSSmitty/spacex_clone_page/issues"
+  },
+  "homepage": "https://github.com/CSSmitty/spacex_clone_page#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
