@@ -1,0 +1,88 @@
+#header
+  position: relative
+  z-index: 5
+  height: 75px
+  background: #181c1f
+
+  .header-inner
+    max-width: 990px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+
+    #navigation
+      position: absolute
+      top: 0
+      height: 3em
+      width: 100%
+
+      ul.menu
+        margin: 0
+        padding: 0
+        text-align: left
+
+        li
+          float: left
+          margin-right: 0
+          padding: 0
+          list-style-type: none
+          list-style-image: none
+
+      .main-nav
+        position: relative
+        padding-top: 30px
+        height: 100%
+        letter-spacing: 0.05em
+
+        #logo
+          float: left
+          margin: 0
+          padding: 0
+          margin-top: -8px
+
+        .nav-list
+          test-transofrm: uppercase
+          font-size: 14px
+          margin-right: 30px
+
+          li
+            display: block
+            margin-right: 18px
+
+        .nav-primary
+          float: left
+
+          li
+            border-width: 0 0 2px 0
+            border-style: hidden hidden solid hidden
+            border-color: transparent
+            -webkit-transition: border-color 0.2s linear
+            transition: border-color 0.2s linear
+
+            &:hover
+              border-color: #ccac55
+              -webkit-transition: border-color 0.2s linear
+              transition: border-color 0.2s linear
+
+            a
+              color: white
+
+        .nav-secondary
+          li
+            border-width: 0 0 2px 0
+            border-style: hidden hidden solid hidden
+            border-color: transparent
+            -webkit-transition: border-color 0.2s linear
+            transition: border-color 0.2s linear
+
+            &:hover
+              border-color: #8b939b
+              -webkit-transition: border-color 0.2s linear
+              transition: border-color 0.2s linear
+
+            a
+              color: #8b939b
+              font-size: 12px
+
+        .rfloat
+          float: right
