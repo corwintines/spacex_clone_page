@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -558,7 +559,49 @@ body {
       color: #3a3a3a; }
 
 .information-area {
-  background-color: white; }
+  background-color: white;
+  padding-top: 60px;
+  padding-bottom: 140px;
+  height: 200px; }
+  .information-area .region-inner {
+    max-width: 990px;
+    margin: auto;
+    padding-left: 70px; }
+    .information-area .region-inner .highlight-div {
+      margin: 10px;
+      padding: 15px;
+      width: 255px;
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+              box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+      float: left; }
+      .information-area .region-inner .highlight-div .header {
+        height: 60px;
+        margin: 10px 0; }
+        .information-area .region-inner .highlight-div .header h4 {
+          margin: 0;
+          font-size: 16px;
+          color: #3a3a3a; }
+      .information-area .region-inner .highlight-div .learn-more {
+        width: 100px;
+        border-width: 0 0 2px 0;
+        border-style: hidden hidden solid hidden;
+        border-color: transparent;
+        -webkit-transition: border-color 0.2s linear;
+        -o-transition: border-color 0.2s linear;
+        transition: border-color 0.2s linear; }
+        .information-area .region-inner .highlight-div .learn-more a {
+          font-size: 12px;
+          color: #3569a4; }
+        .information-area .region-inner .highlight-div .learn-more:hover {
+          border-color: #3569a4;
+          -webkit-transition: border-color 0.2s linear;
+          -o-transition: border-color 0.2s linear;
+          transition: border-color 0.2s linear; }
+        .information-area .region-inner .highlight-div .learn-more ::after {
+          content: "→";
+          text-decoration: none;
+          padding-left: 3px;
+          color: #3a3a3a; }
 
 footer {
   height: 90px;
