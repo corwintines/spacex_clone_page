@@ -450,7 +450,7 @@ html, body {
   min-height: 100vh; }
 
 body {
-  background: lightblue;
+  background: white;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Fira Sans', sans-serif;
@@ -545,6 +545,60 @@ body {
   z-index: 3;
   overflow: hidden; }
 
+.information-header {
+  background-color: white;
+  padding-top: 70px; }
+  .information-header .region-inner {
+    max-width: 990px;
+    margin: auto;
+    text-align: center; }
+    .information-header .region-inner h4 {
+      margin: 0;
+      font-size: 18px;
+      color: #3a3a3a; }
+
+.information-area {
+  background-color: white; }
+
+footer {
+  height: 90px;
+  padding: 40px 10px;
+  background-color: #181c1f; }
+  footer .region-inner {
+    max-width: 990px;
+    font-size: 12px;
+    margin: auto;
+    text-transform: uppercase; }
+    footer .region-inner .block_menu {
+      float: left;
+      width: 24%;
+      position: relative;
+      border-style: none dashed none none;
+      border-width: 0.5px;
+      border-color: #8b939b;
+      height: 100px;
+      margin-right: 20px; }
+      footer .region-inner .block_menu h6 {
+        font-size: 11px;
+        color: white;
+        font-style: normal;
+        line-height: 0.8;
+        margin-top: 10px;
+        margin-bottom: 6px; }
+      footer .region-inner .block_menu .menu {
+        list-style-type: none;
+        list-style-image: none;
+        padding: 0;
+        margin: 0; }
+        footer .region-inner .block_menu .menu .menu_item .menu_link {
+          color: #8b939b; }
+          footer .region-inner .block_menu .menu .menu_item .menu_link:hover {
+            text-decoration: underline; }
+    footer .region-inner #location p {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #8b939b; }
+
 .footer-footer {
   padding: 20px 0 30px 0;
   background: #0e1112;
@@ -560,7 +614,6 @@ body {
       width: 495px;
       margin-left: 0;
       margin-right: -495px;
-      padding-left: 10px;
       padding-right: 10px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -589,7 +642,6 @@ body {
       margin-left: 495px;
       margin-right: -990px;
       padding-left: 10px;
-      padding-right: 10px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       word-wrap: break-word;
