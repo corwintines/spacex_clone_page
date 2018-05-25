@@ -541,14 +541,92 @@ body {
 
 .carousel {
   width: 100%;
-  max-height: 669.5px;
+  height: 605px;
+  max-height: 936px;
   position: relative;
   z-index: 3;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #353535;
+  background-image: url("../images/block5_helicopter.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .carousel .description {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 60px;
+    padding: 30px 0; }
+    .carousel .description .region-inner {
+      max-width: 960px;
+      margin: auto; }
+      .carousel .description .region-inner .carousel-header {
+        width: 50%;
+        float: left;
+        margin-left: 30px; }
+        .carousel .description .region-inner .carousel-header h3 {
+          margin: 0;
+          color: white; }
+      .carousel .description .region-inner .carousel-btn {
+        background-color: white;
+        width: 150px;
+        height: 30px;
+        float: right;
+        margin-right: 30px;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        text-align: center;
+        padding-top: 5px;
+        border: 3px solid transparent;
+        -webkit-transition: border 0.2s linear;
+        -o-transition: border 0.2s linear;
+        transition: border 0.2s linear; }
+        .carousel .description .region-inner .carousel-btn a {
+          color: #3a3a3a;
+          font-size: 11px; }
+        .carousel .description .region-inner .carousel-btn:hover {
+          border: 3px solid #ccac55;
+          -webkit-transition: border 0.2s linear;
+          -o-transition: border 0.2s linear;
+          transition: border 0.2s linear; }
+  .carousel nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #21272b;
+    width: 100%;
+    height: 60px; }
+    .carousel nav ol {
+      counter-reset: item;
+      list-style-type: none;
+      height: 100%;
+      max-width: 1000px;
+      margin: auto; }
+      .carousel nav ol li {
+        color: white;
+        font-size: 12px;
+        width: 33%;
+        height: 100%;
+        float: left;
+        text-align: left;
+        padding-top: 15px; }
+        .carousel nav ol li:nth-child(2) {
+          border-style: hidden solid hidden solid;
+          border-width: 1px;
+          border-color: #454545; }
+        .carousel nav ol li:before {
+          content: counter(item, decimal-leading-zero) " ";
+          counter-increment: item;
+          color: #8b939b;
+          font-size: 12px;
+          padding-left: 10px; }
 
 .information-header {
-  background-color: white;
-  padding-top: 70px; }
+  background-color: transparent;
+  padding-top: 70px;
+  -webkit-box-shadow: inset 0 100px 100px -100px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 100px 100px -100px rgba(0, 0, 0, 0.4); }
   .information-header .region-inner {
     max-width: 990px;
     margin: auto;
