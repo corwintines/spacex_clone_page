@@ -68,12 +68,16 @@
               color: white
 
         .nav-secondary
+          margin-right: 0
           li
             border-width: 0 0 2px 0
             border-style: hidden hidden solid hidden
             border-color: transparent
             -webkit-transition: border-color 0.2s linear
             transition: border-color 0.2s linear
+
+            &:last-child
+              margin-right: 10px
 
             &:hover
               border-color: #8b939b

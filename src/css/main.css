@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -450,7 +451,7 @@ html, body {
   min-height: 100vh; }
 
 body {
-  background: lightblue;
+  background: white;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Fira Sans', sans-serif;
@@ -516,20 +517,254 @@ body {
               transition: border-color 0.2s linear; }
             #header .header-inner #navigation .main-nav .nav-primary li a {
               color: white; }
-        #header .header-inner #navigation .main-nav .nav-secondary li {
-          border-width: 0 0 2px 0;
-          border-style: hidden hidden solid hidden;
-          border-color: transparent;
-          -webkit-transition: border-color 0.2s linear;
-          -o-transition: border-color 0.2s linear;
-          transition: border-color 0.2s linear; }
-          #header .header-inner #navigation .main-nav .nav-secondary li:hover {
-            border-color: #8b939b;
+        #header .header-inner #navigation .main-nav .nav-secondary {
+          margin-right: 0; }
+          #header .header-inner #navigation .main-nav .nav-secondary li {
+            border-width: 0 0 2px 0;
+            border-style: hidden hidden solid hidden;
+            border-color: transparent;
             -webkit-transition: border-color 0.2s linear;
             -o-transition: border-color 0.2s linear;
             transition: border-color 0.2s linear; }
-          #header .header-inner #navigation .main-nav .nav-secondary li a {
-            color: #8b939b;
-            font-size: 12px; }
+            #header .header-inner #navigation .main-nav .nav-secondary li:last-child {
+              margin-right: 10px; }
+            #header .header-inner #navigation .main-nav .nav-secondary li:hover {
+              border-color: #8b939b;
+              -webkit-transition: border-color 0.2s linear;
+              -o-transition: border-color 0.2s linear;
+              transition: border-color 0.2s linear; }
+            #header .header-inner #navigation .main-nav .nav-secondary li a {
+              color: #8b939b;
+              font-size: 12px; }
         #header .header-inner #navigation .main-nav .rfloat {
           float: right; }
+
+.carousel {
+  width: 100%;
+  height: 605px;
+  max-height: 936px;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  background-color: #353535;
+  background-image: url("../images/block5_helicopter.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .carousel .description {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 60px;
+    padding: 30px 0; }
+    .carousel .description .region-inner {
+      max-width: 960px;
+      margin: auto; }
+      .carousel .description .region-inner .carousel-header {
+        width: 50%;
+        float: left;
+        margin-left: 30px; }
+        .carousel .description .region-inner .carousel-header h3 {
+          margin: 0;
+          color: white; }
+      .carousel .description .region-inner .carousel-btn {
+        background-color: white;
+        width: 150px;
+        height: 30px;
+        float: right;
+        margin-right: 30px;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        text-align: center;
+        padding-top: 5px;
+        border: 3px solid transparent;
+        -webkit-transition: border 0.2s linear;
+        -o-transition: border 0.2s linear;
+        transition: border 0.2s linear; }
+        .carousel .description .region-inner .carousel-btn a {
+          color: #3a3a3a;
+          font-size: 11px; }
+        .carousel .description .region-inner .carousel-btn:hover {
+          border: 3px solid #ccac55;
+          -webkit-transition: border 0.2s linear;
+          -o-transition: border 0.2s linear;
+          transition: border 0.2s linear; }
+  .carousel nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #21272b;
+    width: 100%;
+    height: 60px; }
+    .carousel nav ol {
+      counter-reset: item;
+      list-style-type: none;
+      height: 100%;
+      max-width: 1000px;
+      margin: auto; }
+      .carousel nav ol li {
+        color: white;
+        font-size: 12px;
+        width: 33%;
+        height: 100%;
+        float: left;
+        text-align: left;
+        padding-top: 15px; }
+        .carousel nav ol li:nth-child(2) {
+          border-style: hidden solid hidden solid;
+          border-width: 1px;
+          border-color: #454545; }
+        .carousel nav ol li:before {
+          content: counter(item, decimal-leading-zero) " ";
+          counter-increment: item;
+          color: #8b939b;
+          font-size: 12px;
+          padding-left: 10px; }
+
+.information-header {
+  background-color: transparent;
+  padding-top: 70px;
+  -webkit-box-shadow: inset 0 100px 100px -100px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 100px 100px -100px rgba(0, 0, 0, 0.4); }
+  .information-header .region-inner {
+    max-width: 990px;
+    margin: auto;
+    text-align: center; }
+    .information-header .region-inner h4 {
+      margin: 0;
+      font-size: 18px;
+      color: #3a3a3a; }
+
+.information-area {
+  background-color: white;
+  padding-top: 60px;
+  padding-bottom: 140px;
+  height: 200px; }
+  .information-area .region-inner {
+    max-width: 990px;
+    margin: auto;
+    padding-left: 70px; }
+    .information-area .region-inner .highlight-div {
+      margin: 10px;
+      padding: 15px;
+      width: 255px;
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+              box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+      float: left; }
+      .information-area .region-inner .highlight-div .header {
+        height: 60px;
+        margin: 10px 0; }
+        .information-area .region-inner .highlight-div .header h4 {
+          margin: 0;
+          font-size: 16px;
+          color: #3a3a3a; }
+      .information-area .region-inner .highlight-div .learn-more {
+        width: 100px;
+        border-width: 0 0 2px 0;
+        border-style: hidden hidden solid hidden;
+        border-color: transparent;
+        -webkit-transition: border-color 0.2s linear;
+        -o-transition: border-color 0.2s linear;
+        transition: border-color 0.2s linear; }
+        .information-area .region-inner .highlight-div .learn-more a {
+          font-size: 12px;
+          color: #3569a4; }
+        .information-area .region-inner .highlight-div .learn-more:hover {
+          border-color: #3569a4;
+          -webkit-transition: border-color 0.2s linear;
+          -o-transition: border-color 0.2s linear;
+          transition: border-color 0.2s linear; }
+        .information-area .region-inner .highlight-div .learn-more ::after {
+          content: "→";
+          text-decoration: none;
+          padding-left: 3px;
+          color: #3a3a3a; }
+
+footer {
+  height: 90px;
+  padding: 40px 10px;
+  background-color: #181c1f; }
+  footer .region-inner {
+    max-width: 990px;
+    font-size: 12px;
+    margin: auto;
+    text-transform: uppercase; }
+    footer .region-inner .block_menu {
+      float: left;
+      width: 24%;
+      position: relative;
+      border-style: none dashed none none;
+      border-width: 0.5px;
+      border-color: #8b939b;
+      height: 100px;
+      margin-right: 20px; }
+      footer .region-inner .block_menu h6 {
+        font-size: 11px;
+        color: white;
+        font-style: normal;
+        line-height: 0.8;
+        margin-top: 10px;
+        margin-bottom: 6px; }
+      footer .region-inner .block_menu .menu {
+        list-style-type: none;
+        list-style-image: none;
+        padding: 0;
+        margin: 0; }
+        footer .region-inner .block_menu .menu .menu_item .menu_link {
+          color: #8b939b; }
+          footer .region-inner .block_menu .menu .menu_item .menu_link:hover {
+            text-decoration: underline; }
+    footer .region-inner #location p {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #8b939b; }
+
+.footer-footer {
+  padding: 20px 0 30px 0;
+  background: #0e1112;
+  color: #666;
+  text-transform: uppercase; }
+  .footer-footer .inner {
+    max-width: 990px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto; }
+    .footer-footer .inner #left-footer-footer-block {
+      float: left;
+      width: 495px;
+      margin-left: 0;
+      margin-right: -495px;
+      padding-right: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      word-wrap: break-word; }
+      .footer-footer .inner #left-footer-footer-block .lfloat {
+        float: left; }
+        .footer-footer .inner #left-footer-footer-block .lfloat .spacer {
+          padding: 0 10px; }
+      .footer-footer .inner #left-footer-footer-block .footer-footer-list {
+        float: left;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none;
+        display: block; }
+        .footer-footer .inner #left-footer-footer-block .footer-footer-list li {
+          margin-right: 20px;
+          float: left; }
+          .footer-footer .inner #left-footer-footer-block .footer-footer-list li a {
+            color: #8b939b; }
+            .footer-footer .inner #left-footer-footer-block .footer-footer-list li a:hover {
+              text-decoration: underline; }
+    .footer-footer .inner #right-footer-footer-block {
+      float: left;
+      width: 495px;
+      margin-left: 495px;
+      margin-right: -990px;
+      padding-left: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      word-wrap: break-word;
+      text-align: right;
+      font-size: 10px; }
