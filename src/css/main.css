@@ -646,6 +646,14 @@ body {
         width: 100%;
         height: 24%; } }
 
+@media (max-width: 450px) {
+  .carousel .description .region-inner .carousel-header {
+    width: 40%; }
+  .carousel .description .region-inner .carousel-btn {
+    margin-top: 8%;
+    width: 40%;
+    top: 50%; } }
+
 .information-header {
   background-color: transparent;
   padding-top: 70px;
@@ -658,7 +666,9 @@ body {
     .information-header .region-inner h4 {
       margin: 0;
       font-size: 18px;
-      color: #3a3a3a; }
+      color: #3a3a3a;
+      margin-left: 10px;
+      margin-right: 10px; }
 
 .information-area {
   background-color: white;
@@ -719,6 +729,18 @@ body {
 @media (max-width: 768px) {
   .information-area {
     height: 420px; } }
+
+@media (max-width: 650px) {
+  .information-area {
+    height: 900px; }
+    .information-area .region-inner {
+      padding-left: 0; }
+      .information-area .region-inner .highlight-div {
+        width: 70%;
+        height: 260px;
+        margin: auto;
+        float: none;
+        margin-bottom: 30px; } }
 
 footer {
   height: 90px;
@@ -787,6 +809,7 @@ footer {
       footer .region-inner .block_menu:nth-child(3) {
         padding-bottom: 10px; }
     footer #location {
+      text-align: center;
       width: 40%;
       margin: auto; } }
 
